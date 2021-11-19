@@ -58,6 +58,12 @@ header .logo {
   height: 75px;
   justify-content: center;
 }
+@media (max-width: 360px) {
+  header {
+    width: 376px;
+  }
+}
+
 @media (max-width: 767px) {
   header .logo {
     width: 100%;
@@ -120,9 +126,10 @@ header nav > ul > li > a:hover {
   font-size: 40px;
   color: #000;
 }
+
 @media (max-width: 767px) {
   .landing h1 {
-    font-size: 24px;
+    font-size: 23px;
     margin-top: 50px;
   }
 }
@@ -180,6 +187,11 @@ header nav > ul > li > a:hover {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
 }
+@media (max-width: 767px) {
+  .doros .container {
+    margin-left: 12px;
+  }
+}
 
 .doros .box {
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
@@ -213,6 +225,14 @@ header nav > ul > li > a:hover {
 }
 .doros .text-box a {
   color: #e31717;
+  font-size: 18px;
+}
+
+.doros .text-box p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #2196f3;
+  font-weight: bold;
 }
 
 .end {
@@ -229,6 +249,11 @@ footer {
   background-color: #fff;
   position: relative;
 }
+@media (max-width: 767px) {
+  footer {
+    width: 375px;
+  }
+}
 footer .container {
   display: flex;
   align-items: center;
@@ -237,13 +262,40 @@ footer .container {
 footer .copyright p {
   font-size: 20px;
   font-family: cursive;
-  transform: translateY(-25px);
-  margin-left: 10px;
-
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  footer .copyright p {
+    font-size: 15px;
+  }
 }
 footer .copyright i {
   color: #e31717;
 }
+
+footer .icon {
+  margin-top: 10px;
+}
+
+footer .icon a {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-github {
+  color: #171515;
+}
+.fa-stripe-s {
+  color: #2196f3;
+}
+
+
+
 
 
 .up {
